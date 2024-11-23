@@ -148,6 +148,7 @@ function getLearnerData(course, ag, submissions) {
       }
 
       const avg = totalScore / totalPoints;
+      // toFixed: converts the avg score to a string
       const result = { id: learner, avg: avg.toFixed(3), ...scores };
       results.push(result);
     }
